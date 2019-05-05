@@ -1,1 +1,34 @@
 Ce fichier explique certaines commandes de Git
+
+La commande pwd vous permet de connaître votre répertoire courant (tapez pwd puis Entrée) 
+
+La commande ls vous permet de voir la liste des fichiers et répertoires dans le dossier courant 
+
+Si vous souhaitez voir les éléments de votre répertoire courant sous forme de liste, vous pouvez ajouter l'option '-l' à la commande ls. Vous pouvez également afficher plus d'informations sur ces éléments en utilisant l'option '-a' :
+ls -l -a
+
+La commande cd vous permet de vous placer dans un répertoire.
+
+La commande touch vous permet de créer un fichier.
+
+La commande mkdir vous permet de créer un dossier.
+
+La commande cat vous permet d'afficher le contenu d’un fichier. 
+
+Git init : Pour activer un dossier
+git add nomDeVotreFichier.extension : ajouter à l'index Git
+git add . : ajouter tous les fichiers du répertoire
+git commit -m "Ajouté ma checklist-vacances.md (woohoo!)"  OU
+git commit -a -m: "Ajouté ma checklist-vacances.md (woohoo!)" : Lorsque vous modifiez votre repository, vous devez demander à Git d'enregistrer vos modifications
+git log : qui vous affiche la liste de tous les commits que vous avez réalisés ! 
+git checkout + sha : ancienne version
+git checkout master : version actuelle
+git revert + sha : créer un nouveau commit
+git commit --amend -m "Votre nouveau message" : modifier le message de votre dernier commit
+git reset --hard : annuler tous les changements que je n'ai pas encore commités
+cat script.js: appelle le code
+Les remotes
+Git remote
+Git clone + URL en https
+Git push origin master : permet de synchroniser avec le serveur github
+Git pull origin master : permet de récupérer les modifications faites par d’autres personnes
